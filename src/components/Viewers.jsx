@@ -4,33 +4,21 @@ const Viewers = (props) => {
     return(
         <Container>
             <Wrap>
-                <img src="/images/viewers-disney.png" alt="" />
+                <h1 className="hello">FAKE</h1>
                 <video autoPlay={true} loop={true} playsInline={true}>
-                    <source src="/videos/disney.mp4" type="video/mp4" />
+                    <source src="/videos/video1.mp4" type="video/mp4" />
                 </video>
             </Wrap>
             <Wrap>
-                <img src="/images/viewers-marvel.png" alt="" />
+                <h1 className="hello1">A</h1>
                 <video autoPlay={true} loop={true} playsInline={true}>
-                <source src="/videos/marvel.mp4" type='video/mp4' />
+                <source src="/videos/video2.mp4" type='video/mp4' />
                 </video>
             </Wrap>
             <Wrap>
-                <img src="/images/viewers-national.png" alt="" />
+                <h1 className="hello">CAKE</h1>
                 <video autoPlay={true} loop={true} playsInline={true}>
-                <source src="/videos/national-geographic.mp4"  type='video/mp4' />
-                </video>
-            </Wrap>
-            <Wrap>
-                <img src="/images/viewers-pixar.png" alt="" />
-                <video autoPlay={true} loop={true} playsInline={true}>
-                <source src="/videos/pixar.mp4" type='video/mp4' />
-                </video>
-            </Wrap>
-            <Wrap>
-                <img src="/images/viewers-starwars.png" alt="" />
-                <video autoPlay={true} loop={true} playsInline={true}>  
-                <source src="/videos/star-wars.mp4" type='video/mp4' />
+                <source src="/videos/video3.mp4"  type='video/mp4' />
                 </video>
             </Wrap>
         </Container>
@@ -43,7 +31,7 @@ const Container = styled.div`
   display : grid;
   grid-gap : 25px;
   gap : 25px;
-  grid-template-columns : repeat(5, minmax(0, 1fr)) ;
+  grid-template-columns : repeat(3, minmax(0, 1fr)) ;
 
   @media (max-width : 768px) {
       grid-template-columns : repeat(1 , minmax(0 ,1fr)) ;
@@ -59,6 +47,18 @@ const Wrap = styled.div`
   position: relative;
   transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
   border :3px solid rgba(249, 249, 249, 0.1);
+  .hello{
+    font-size:70px;
+    position:absolute;
+    top:30%;
+    right:32%;
+  }
+  .hello1{
+    font-size:70px;
+    position:absolute;
+    top:30%;
+    right:45%;
+  }
 
   img{
       inset: 0;
@@ -79,7 +79,7 @@ const Wrap = styled.div`
       position: absolute;
       top: 0;
       opacity: 0;
-      z-index: 0;
+      z-index: -1;
   }
 
   &:hover{

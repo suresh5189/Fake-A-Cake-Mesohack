@@ -9,18 +9,28 @@ const NewDisney = (props) => {
 
   return (
     <Container>
-      <h4>New to Disney+</h4>
+      <h2>Recommend for you</h2>
       <Content>
-        {
-          movies &&  movies.map((movie , key) => (
-            <Wrap key={key}>
-              {movie.id}
-              <Link to={`/details/` + movie.id}>
-                <img src={movie.cardImg} alt={movie.title} />
-              </Link>
+            <Wrap>
+              <a>
+                <img src="./images/cake4.webp" alt="" />
+                </a>
             </Wrap>
-          ))
-        }
+            <Wrap>
+              <a>
+                <img src="./images/cake5.webp" alt="" />
+                </a>
+            </Wrap>
+            <Wrap>
+              <a>
+                <img src="./images/cake6.jpg" alt="" />
+                </a>
+            </Wrap>
+            <Wrap>
+              <a>
+                <img src="./images/cake7.webp" alt="" />
+                </a>
+            </Wrap>
       </Content>
     </Container>
   )

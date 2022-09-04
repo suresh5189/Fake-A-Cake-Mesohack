@@ -3,8 +3,7 @@ import ImgSlider from "./ImgSlider";
 import Viewers from './Viewers';
 import Recommends from "./Recommends";
 import NewDisney from "./NewDisney";
-import Originals from "./Original";
-import Trending from "./Trending";
+import Contact from "./contact/Contact";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { db } from './firebase';
@@ -59,8 +58,7 @@ const Home = (props) => {
             <Viewers />
             <Recommends />
             <NewDisney />
-            <Originals />
-            <Trending />
+            <Contact />
         </Container>
     )
 }

@@ -9,18 +9,28 @@ const Recommends = (props) => {
 
   return (
     <Container>
-      <h4>Recommends for You</h4>
+      <h2>Trending</h2>
       <Content>
-        {
-          movies &&  movies.map((movie , key) => (
-            <Wrap key={key}>
-              {movie.id}
-              <Link to={`/details/` + movie.id}>
-                <img src={movie.cardImg} alt={movie.title} />
-              </Link>
+            <Wrap>
+              <a>
+                <img src="./images/bg-cake2.jpeg" alt="" />
+                </a>
             </Wrap>
-          ))
-        }
+            <Wrap>
+              <a>
+                <img src="./images/cake2.webp" alt="" />
+                </a>
+            </Wrap>
+            <Wrap>
+              <a>
+                <img src="./images/cake1.webp" alt="" />
+                </a>
+            </Wrap>
+            <Wrap>
+              <a>
+                <img src="./images/cake4.webp" alt="" />
+                </a>
+            </Wrap>
       </Content>
     </Container>
   )
@@ -32,9 +42,9 @@ const Container = styled.div`
 
 const Content = styled.div`
   display : grid;
-  grid-gap : 25px;
+  grid-gap : 35px;
   gap: 25px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 
   @media( max-width : 768px){
     grid-template-columns: repeat(2, minmax(0 ,1fr));

@@ -54,7 +54,7 @@ const Header = (props) => {
     return (
         <Nav>
             <Logo>
-                <img src="images/logo.svg" alt="DisneyPlus" />
+                <img src="images/Artboard1.png" alt="DisneyPlus" />
             </Logo>
 
             {
@@ -73,20 +73,12 @@ const Header = (props) => {
                                 <span>SERACH</span>
                             </a>
                             <a href="/home">
-                                <img src="images/watchlist-icon.svg" alt="Watchlist" />
-                                <span>WATCHLIST</span>
+                                <img src="images/watchlist-icon.svg" alt="Contact" />
+                                <span>Contact</span>
                             </a>
                             <a href="/home">
-                                <img src="images/original-icon.svg" alt="Original" />
-                                <span>ORIGINAL</span>
-                            </a>
-                            <a href="/home">
-                                <img src="images/movie-icon.svg" alt="Movies" />
-                                <span>MOVIES</span>
-                            </a>
-                            <a href="/home">
-                                <img src="images/series-icon.svg" alt="Series" />
-                                <span>SERIES</span>
+                                <img src="images/original-icon.svg" alt="About" />
+                                <span>About</span>
                             </a>
                         </NavMenu>
                         <SignOut>

@@ -20,22 +20,22 @@ const ImgSlider = (props) => {
             <Carousel {...setting}>
                 <Wrap>
                     <a>
-                        <img src="/images/slider1.jpg" alt="" />
+                        <img src="/images/slide.jpg" alt="" />
                     </a>
                 </Wrap>
                 <Wrap>
                     <a>
-                        <img src="/images/slider2.jpg" alt="" />
+                        <img src="/images/bg-cake5.jpg" alt="" />
                     </a>
                 </Wrap>
                 <Wrap>
                     <a>
-                        <img src="/images/slider3.jpg" alt="" />
+                        <img src="/images/bg3.webp" alt="" />
                     </a>
                 </Wrap>
                 <Wrap>
                     <a>
-                        <img src="/images/slider4.jpg" alt="" />
+                        <img src="/images/cakeimg1.webp" alt="" />
                     </a>
                 </Wrap>
             </Carousel>
@@ -95,7 +95,8 @@ const Wrap = styled.div`
         position: relative;
         display: block;
         padding: 6px;
-
+        height:600px;
+    }
     img{
         width: 100%;
         height: 100%;

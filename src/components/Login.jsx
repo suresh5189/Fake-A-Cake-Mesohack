@@ -7,10 +7,9 @@ const Login = (props) => {
     <Container>
       <Content>
         <CTA>
-          <CTALogoOne src="/images/ctalogo1.svg" alt="" />
+          <CTALogoOne src="/images/Artboard1.png" alt="" />
           <SignUp>GET ALL THERE</SignUp>
-          <Description>Get Premier Access to Raya and the Last Dragon for an additional fee with a Disney+ subscription. As of 14/04/2022, the price of Disney+ and The Disney Bundle will increases by $1.</Description>
-          <CTALogoTwo src="/images/ctalogo2.png" alt="" />
+          <Description>It's a piece of cake</Description>
         </CTA>
         <BgImage />
       </Content>
@@ -41,14 +40,16 @@ const Content = styled.div`
 `;
 
 const BgImage = styled.div`
-  height: 100%;
-  background-image: url("/images/bgimage.jpg");
+  height: 100vh;
+  background-image: url("/images/bg1.jpg");
   background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: -1;
+  opacity:0.5
+  
 `;
 
 const CTA = styled.div`
@@ -60,10 +61,12 @@ const CTA = styled.div`
 
 const CTALogoOne = styled.img`
   margin-bottom: 12px;
+  margin-left:140px;
   max-width: 650px;
   min-height: 1px;
   display: block;
-  width: 100%;
+  width: 50%;
+  opacity:0.5;
 `;
 
 const SignUp = styled.a`
@@ -85,20 +88,12 @@ const SignUp = styled.a`
 `;
 
 const Description = styled.p`
-  color: hsla(0, 0%, 95.3%, 1);
-  font-size: 11px;  
+  color: white;
+  font-size: 20px;  
   margin: 0 0 24px;
   line-height: 1.5;
   letter-spacing: 1.5px;
   text-align: center;
-`;
-
-const CTALogoTwo = styled.img`
-  max-width: 600px;
-  margin-bottom: 20px;
-  display: inline-block;
-  vertical-align: bottom;
-  width: 100%;
 `;
 
 export default Login
